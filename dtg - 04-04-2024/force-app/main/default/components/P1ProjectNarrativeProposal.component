@@ -1,0 +1,364 @@
+<apex:component controller="IfpocFormsPdfController" access="global">
+    <apex:attribute name="recordId" type="Id" description="The record Id" />
+    <div>
+        <apex:outputPanel >
+            <apex:repeat value="{!recordFields}" var="field">
+                <div c-p1projectnarrativeproposal="" class="table-container">
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>5. PROJECT NARRATIVE PROPOSAL: Charts, graphs or images may be utilized in responses.
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>5.1 Background, Objectives, Rationale, Significance, and Justify why the project
+                                            is innovative. Also include an assessment of expected outcomes.
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr cp1projectnarrativeproposals="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Background_Objectives_Exp_Outcomes__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            5.2 Approach and Work Plan - Provide a description of the approach to be used as well as a detailed project work plan. If
+                                            applicable, please include: rationale for recruitment targets, power calculations.
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Approach_and_Work_Plan__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            5.3 Timeline - Provide a target start date, the dates when each milestone will be completed and the target finishing date
+                                            for the project.
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Timeline_and_Milestones__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            5.4 Project Outcome Evaluation Metrics – Detail the anticipated outcomes and how these outcomes will be measured. Which measurement
+                                            will determine success? How will you measure it? What is the expected benefit
+                                            and how will it be measure? How will the IFPOC determine if the project was successful?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Outcome_Evaluation_Metrics__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            5.5 Team. Please include the names and affiliations of the team members, with a brief statement of their roles, experience
+                                            (are any early career investigators?), area(s) of expertise, time commitment
+                                            and planned contributions to the project.
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Project_Team_Details__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            5.6 Additional Project Funding (only if applicable) – Elaborate on any supplemental funding for the proposed project including
+                                            the amount and source as well as any contingencies or other special circumstances
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Additional_Funding_Opportunity__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            5.7 Other Relevant Information (optional) –Please elaborate on any other items you think important or relevant to the implementation
+                                            or outcomes of this project.
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Relevant_Information__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            5.8 Has this project Proposal been submitted and been unsuccessful in a previous innovation fund competition?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Previous_Proposal_Submission_Status__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            5.8 If YES – please provide a detailed response to the specific comments / feedback from reviewer(s) in the past
+                                         </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Comment_Feedback_from_Past_Reviewers__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            5.9 List of References and/or Support from Partners (optional) – Please provide bibliographic citations or attach any letters
+                                            of support from partners into this section. For references, list the peer-reviewed
+                                            papers published or “in-press” as follows: Authors’ last name and first initials
+                                            (list first 6 and if more add et al.). </h3>
+                                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectnarrativeproposal="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectnarrativeproposal="">
+                            <!--Project_Keyword_1__c-->
+                            <tr c-p1projectnarrativeproposal="">
+                                <td c-p1projectnarrativeproposal="">
+                                    <lightning-input c-p1projectnarrativeproposal="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.References_and_or_Partner_Support__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </apex:repeat>
+        </apex:outputPanel>
+    </div>
+</apex:component>

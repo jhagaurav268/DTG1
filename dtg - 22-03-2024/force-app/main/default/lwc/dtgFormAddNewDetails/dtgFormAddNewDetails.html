@@ -1,0 +1,166 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-15-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+	<div class="c-container">
+		<lightning-progress-indicator class="slds-m-around_medium" current-step={currentStep} type="path"
+			variant="base">
+			<template for:each={progressIndicatorSteps} for:item="item">
+				<lightning-progress-step key={item.step} label={item.label} value={item.step} name={item.name}
+					onclick={handleStepClick}></lightning-progress-step>
+			</template>
+		</lightning-progress-indicator>
+
+		<lightning-layout vertical-align="end">
+			<!-- <lightning-layout-item if:true={isShowPreview} flexibility="auto" padding="around-small">
+				<lightning-button label="Preview" variant="brand" title="Preview" onclick={previewHandler}
+					class={buttonColor}></lightning-button>
+			</lightning-layout-item> -->
+			<lightning-layout-item if:true={isShowDraft} class="slds-text-align_right" flexibility="auto"
+				padding="around-small">
+				<lightning-button label="Save as Draft" variant="brand" title="Draft" onclick={saveDraftHandler}
+					class={buttonColor}></lightning-button>
+			</lightning-layout-item>
+			<lightning-layout-item if:true={isShowSave} flexibility="auto" padding="around-small">
+				<lightning-button label="Submit Report" variant="brand" title="Submit Report" onclick={submitHandler}
+					class={buttonClr}></lightning-button>
+			</lightning-layout-item>
+			<lightning-layout-item if:true={isShowSave} flexibility="auto" padding="around-small">
+				<!-- <lightning-button label="Submit Report" variant="brand" title="Submit Report" onclick={submitHandler} class={buttonClr} ></lightning-button> -->
+			</lightning-layout-item>
+		</lightning-layout>
+
+		<lightning-spinner variant="brand" size="large" if:true={loadingSpinner}
+			style="position:centre;"></lightning-spinner>
+
+		<lightning-layout vertical-align="center">
+			<lightning-layout-item flexibility="auto" padding="around-small">
+				<div class="table-container" data-id="dataDiv">
+					<template for:each={currentScreen.elements} for:item="element">
+						<table class="caleitc-table" key={element.section.id}>
+							<thead if:false={element.section.hidden}>
+								<th if:true={element.section.heading.showHeading} class={element.section.heading.class}>
+									<h1>{element.section.heading.label}</h1>
+									<h1 class="smaller-font" if:true={element.section.heading.value}>
+										{element.section.heading.value}</h1>
+								</th>
+
+							</thead>
+							<tbody if:false={element.section.hidden}>
+								<template for:each={element.section.rows} for:item="row">
+									<tr key={row.id} if:false={row.hidden}>
+										<template for:each={row.columns} for:item="column">
+											<td if:true={column.isLabel} class={column.class} key={column.id}>
+												<lightning-formatted-rich-text class="input-label"
+													value={column.label}></lightning-formatted-rich-text>
+											</td>
+											<td if:true={column.isInput} key={column.id}>
+												<!-- <input type={column.type} name={column.fieldAPIName} disabled={column.isDisabled} readonly={column.isReadOnly} class={column.class} /> -->
+												<lightning-input type={column.type} value={column.value} accept={column.accept}
+													variant="label-hidden" name={column.fieldAPIName}
+													readonly={column.isReadOnly} class={column.class}
+													maxlength={column.maxLength} pattern={column.pattern}
+													placeholder={column.placeholder}
+													onchange={onInputChange} onblur={onTokenChange}></lightning-input>
+											</td>
+											<td if:true={column.isRichText} class={column.class} key={column.id}>
+												<lightning-input-rich-text class={column.class} value={column.value}>
+												</lightning-input-rich-text>
+											</td>
+											<!-- <td if:true={column.isFormat} key={column.id}>
+												<lightning-formatted-phone value={column.value} ariant="label-hidden" name={column.fieldAPIName} readonly={column.isReadOnly} class={column.class} maxlength ={column.maxLength}  pattern={column.pattern} style="pointer-events: none;"></lightning-formatted-phone>
+											
+											</td> -->
+
+											<td if:true={column.isRequiredInput} key={column.id}>
+												<!-- <input type={column.type} name={column.fieldAPIName} disabled={column.isDisabled} readonly={column.isReadOnly} class={column.class} /> -->
+												<lightning-input type={column.type} variant="label-hidden"
+													name={column.fieldAPIName} readonly={column.isReadOnly}
+													class={column.class} maxlength={column.maxLength}
+													required></lightning-input>
+											</td>
+											<td if:true={column.isTargetLabel} class={column.class} key={column.id}>
+												<lightning-formatted-rich-text class="input-label"
+													value={column.label}></lightning-formatted-rich-text>
+											</td>
+											<td if:true={column.isTargetInput} key={column.id}>
+												<!-- <input type={column.type} name={column.fieldAPIName} disabled={column.isDisabled} readonly={column.isReadOnly} class={column.class} /> -->
+												<lightning-input type={column.type} variant="label-hidden"
+													name={column.fieldAPIName} readonly={column.isReadOnly}
+													pattern={column.pattern} class={column.class}
+													maxlength={column.maxLength}
+													disabled={column.disabled}></lightning-input>
+											</td>
+											<td if:true={column.isCurrencyTargetInput} key={column.id}>
+												<!-- <input type={column.type} name={column.fieldAPIName} disabled={column.isDisabled} readonly={column.isReadOnly} class={column.class} /> -->
+												<lightning-input type={column.type} variant="label-hidden"
+													name={column.fieldAPIName} formatter={column.formatter}
+													readonly={column.isReadOnly} class={column.class}
+													maxlength={column.maxLength} step={column.step}
+													disabled={column.disabled}></lightning-input>
+											</td>
+											<td if:true={column.isTextarea} key={column.id}>
+												<lightning-textarea variant="label-hidden" name={column.fieldAPIName}
+													readonly={column.isDisabled}
+													class={column.class}></lightning-textarea>
+											</td>
+											<td if:true={column.isCurrency} key={column.id}>
+												<!-- <input type={column.type} formatter={formatter} name={column.fieldAPIName}  disabled={column.isDisabled} class={column.class} /> -->
+												<lightning-input type={column.type} value={column.value}
+													variant="label-hidden" formatter={column.formatter}
+													name={column.fieldAPIName} readonly={column.isDisabled}
+													class={column.class} maxlength={column.maxLength} step={column.step}
+													disabled={column.disabled} placeholder={column.placeholder}
+													pattern={column.pattern}></lightning-input>
+											</td>
+											<td if:true={column.isButton} key={column.id} class={column.class}>
+												<lightning-button variant="brand" name={column.name}
+													label={column.label} onclick={handleClick}></lightning-button>
+											</td>
+											<td if:true={column.isCombobox} key={column.id} class={column.class}>
+												<lightning-combobox variant="label-hidden" name={column.fieldAPIName}
+													data-name={column.name} label={column.label}
+													options={column.options} class={column.class} value={column.value}
+													required onchange={onComboboxChange}></lightning-combobox>
+											</td>
+											<td if:true={column.isDualList} key={column.id} class={column.class}>
+												<lightning-dual-listbox name={column.fieldAPIName} class={column.class}
+													variant="label-hidden" source-label="Available"
+													selected-label="Selected" options={column.options}
+													onchange={onComboboxChange}
+													size={column.size}></lightning-dual-listbox>
+											</td>
+											<td if:true={column.isCheckbox} key={column.id}>
+												<lightning-input type={column.type} variant="label-hidden"
+													name={column.fieldAPIName} disabled={column.isDisabled}
+													data-id={column.id} class={column.className} checked={column.value}
+													onchange={handleChange}
+													style=" padding:6px; text-align:center ;"></lightning-input>
+											</td>
+										</template>
+									</tr>
+								</template>
+							</tbody>
+						</table>
+					</template>
+				</div>
+
+			</lightning-layout-item>
+		</lightning-layout>
+		<lightning-layout>
+			<lightning-layout-item flexibility="auto" padding="around-small">
+				<lightning-button label="Previous" title="Previous" onclick={backButtonHandler}
+					hidden={isPrevious}></lightning-button>
+			</lightning-layout-item>
+			<lightning-layout-item alignment-bump="right" class="slds-text-align_right" flexibility="auto"
+				padding="around-small">
+				<lightning-button label="Next" title="Next" onclick={nextButtonHandler} disabled={isDisabled}
+					hidden={isNext}></lightning-button>
+			</lightning-layout-item>
+		</lightning-layout>
+	</div>
+</template>

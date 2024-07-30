@@ -1,0 +1,221 @@
+<apex:component controller="IfpocFormsPdfController" access="global" >
+    <apex:attribute name="recordId" type="Id" description="The record Id"  />
+    <div>
+        <apex:outputPanel >
+            <apex:repeat value="{!recordFields}" var="field">
+                <div c-caleitcaddnewdetails_caleitcaddnewdetails="" class="table-container">
+                    <table c-caleitcaddnewdetails_caleitcaddnewdetails="" class="caleitc-table" style="width:100%;">
+                        <tbody c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="" class="table-global-heading">
+                                    <span><h3> APPLICANT PROJECT PROPOSAL </h3></span>
+                                </td>
+                            </tr>
+                        </tbody >
+                    </table>
+                    <table c-caleitcaddnewdetails_caleitcaddnewdetails="" class="caleitc-table" style="width:100%;">
+                        <tbody c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="" class="table-main-heading">
+                                    <span><h3>1.PROJECT SUMMARY</h3></span>
+                                </td>
+                            </tr>
+                        </tbody >
+                    </table>
+                    <table c-caleitcaddnewdetails_caleitcaddnewdetails="" class="caleitc-table" style="width:100%;">
+                        <tbody c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                            <!--Grantee_Organization_Name__c-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output"><span>Grantee Organization Name:</span></lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-input c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                <!-- {!field.Grantee_Organization_Name__c}-->
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <!--Grantee_Representative__c-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output"><span>Grantee Representative:</span></lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-input c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1872" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                <!-- {!field.Grantee_Organization_Name__c}-->
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <!--Telephone_Number__c-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output"><span>Telephone Number:</span></lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-input c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1874" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                <!-- {!field.Grantee_Organization_Name__c}-->
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <!--Email_Address__c-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output"><span>Email Address:</span></lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-input c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1876" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                <!-- {!field.Grantee_Organization_Name__c}-->
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <!--Contract__c-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output">
+                                        <span>Contract Number:</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input user-required-input">
+                                    <!-- {!field.Grantee_Organization_Name__c}-->
+                                </td>
+                            </tr>
+                            <!--Target_Area__c-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output"><span>Target Area:</span></lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-input c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1883" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                <!-- {!field.Grantee_Organization_Name__c}-->
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <!--Reporting_Period__c-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output">
+                                        <span> Reporting Period:</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input user-required-input">
+                                    <!-- {!field.Grantee_Organization_Name__c}-->
+                                </td>
+                            </tr>
+                             <!--Name-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output">
+                                        <span> Program Report ID:</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input user-required-input">
+                                   
+                                </td>
+                            </tr>
+                             <!--Status__c:-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output">
+                                        <span> Status:</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input user-required-input">
+                                    <!-- {!field.Grantee_Organization_Name__c}-->
+                                </td>
+                            </tr>
+                            <!--Approve_Reject_Comment__c-->
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output">
+                                        <span> Approved/Rejected/Recalled Comment:</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="" class="user-input user-required-input">
+                                    <!-- {!field.Grantee_Organization_Name__c}-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-caleitcaddnewdetails_caleitcaddnewdetails="" class="caleitc-table" style="width:100%;">
+                        <tbody c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <th c-caleitcaddnewdetails_caleitcaddnewdetails="" class="table-main-heading"><h3 c-caleitcaddnewdetails_caleitcaddnewdetails="">Education and Outreach Activities</h3></th>
+                            </tr>
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <th c-caleitcaddnewdetails_caleitcaddnewdetails="" class="table-main-heading"><h3 c-caleitcaddnewdetails_caleitcaddnewdetails="">Salaries, Wages, and Fringe Benefits</h3></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-caleitcaddnewdetails_caleitcaddnewdetails="" class="caleitc-table" style="width:100%;">
+                        <tbody c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output"><span></span></lightning-formatted-rich-text>
+                                </td>
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output"><span>Current</span></lightning-formatted-rich-text>
+                                </td>
+                            </tr>
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <lightning-formatted-rich-text c-caleitcaddnewdetails_caleitcaddnewdetails="" class="input-label slds-rich-text-editor__output"><span>Total Salary Expenditures for Reporting Period</span></lightning-formatted-rich-text>
+                                </td>
+                                <!--Total_SE_for_Reporting_Period_PR__c-->
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">                                
+                                    <div lightning-input_input="" part="input-text">                                      
+                                        <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                         <!-- {!field.Grantee_Organization_Name__c}-->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-caleitcaddnewdetails_caleitcaddnewdetails="" class="caleitc-table" style="width:100%;">
+                        <tbody c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <th c-caleitcaddnewdetails_caleitcaddnewdetails="" class="table-main-heading"><h3 c-caleitcaddnewdetails_caleitcaddnewdetails="">Explanation of Expenditures for Salary Activities</h3></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <table c-caleitcaddnewdetails_caleitcaddnewdetails="" class="caleitc-table" style="width:100%;height=100%;">
+                        <tbody c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                            <tr c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                <td c-caleitcaddnewdetails_caleitcaddnewdetails="">
+                                    <!-- {!field.Grantee_Organization_Name__c}-->
+                                   
+                                </td>
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+                </div>            
+            </apex:repeat> 
+        </apex:outputPanel>
+    </div>
+</apex:component>

@@ -1,0 +1,143 @@
+.c-container {
+    border: 1px solid #d8dde6;
+    background-color: white;
+    margin: 10px 0 20px;
+}
+
+.single-line-textarea {
+    resize: both;
+    overflow: auto;
+    width: 100%;
+    --sds-c-textarea-sizing-max-height: 33px;
+}
+
+.caleitc-table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.caleitc-table th td,
+.caleitc-table tr td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.table-main-heading {
+    color: white;
+    background-color: #2e6ca4;
+    border: 1px solid black;
+    padding: 5px 0px 5px 5px;
+    font-size: 16px;
+}
+
+.table-main-heading {
+    color: white;
+    background-color: #2e6ca4;
+    border: 1px solid black;
+    padding: 5px 0px 5px 5px;
+    font-size: 16px;
+}
+
+.table-main-Ftpa-heading {
+    color: white;
+    background-color: #68A225;
+    border: 1px solid black;
+    padding: 5px 0px 5px 5px;
+    font-size: 20px;
+}
+
+.table-global-heading {
+    color: white;
+    background-color: #2e6ca4;
+    border: 1px solid black;
+    padding: 5px 0px 5px 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.table-work-plan-global-heading {
+    color: white;
+    background-color: #68A225;
+    border: 1px solid black;
+    padding: 5px 0px 5px 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.table-work-plan-main-heading {
+    color: white;
+    background-color: #68A225;
+    border: 1px solid black;
+    padding: 5px 0px 5px 5px;
+    font-size: 18px;
+    /* text-align: center; */
+}
+
+.table-sub-heading {
+    color: white;
+    background-color: #2e6ca4;
+    border: 1px solid black;
+    padding: 5px 0px 5px 5px;
+    font-size: 14px;
+}
+
+.table-work-plan-sub-heading {
+    /* color:white; 
+       background-color: #68A225;  
+      border: 1px solid black;
+      padding: 5px 0px 5px 5px;*/
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.input-label {
+    font-weight: bold;
+}
+
+.slds-width-50 {
+    width: 50%;
+}
+
+.work-plan {
+    --slds-c-button-brand-color-background: hsl(88, 63%, 39%);
+    --sds-c-button-text-color: #f4f7f9;
+    --slds-c-button-brand-color-background-hover: rgb(15, 164, 50);
+    --slds-c-button-brand-color-border: hsl(88, 63%, 39%);
+    padding: 5px 0px 5px 5px;
+}
+
+.program-report {
+    --slds-c-button-brand-color-background: rgb(59, 167, 85);
+    --slds-c-button-brand-color-background-hover: rgb(22, 92, 38);
+    --slds-c-button-brand-color-border: rgb(59, 167, 85);
+}
+
+.table-style {
+    border: black 2px solid;
+}
+
+.text-area-size {
+    --sds-c-textarea-sizing-min-height: 150px;
+}
+
+.chechbox-style {
+    text-align: center;
+    border: 2px;
+}
+
+.smaller-font-heading {
+    font-size: 14px;
+}
+
+.smaller-font {
+    font-size: small;
+}
+
+.width {
+    width: 100px;
+}
+
+.custom-textarea {
+    --sds-c-textarea-sizing-min-height:150px;
+  }

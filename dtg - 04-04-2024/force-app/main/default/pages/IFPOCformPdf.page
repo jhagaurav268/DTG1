@@ -1,0 +1,112 @@
+<apex:page controller="IfpocFormsPdfController"  renderAs="PDF" applyHtmlTag="false" showHeader="false" cache="true" readOnly="true" >
+    <head>
+        <style>
+            .header {
+            display: block;
+            padding: 10px;
+            }
+            
+            @page {
+            margin-bottom: 3cm;
+            @top-center {
+            content: element(header);
+            }
+            
+            @bottom-center {
+            content: element(footer);
+            }
+            }
+            
+            div.footer {
+            display: block;
+            padding: 10px;
+            position: running(footer);
+            }          
+            .c-container {
+            border: 1px solid #d8dde6;
+            background-color: white;
+            margin: 10px 0 20px;
+            }
+            
+            .single-line-textarea {
+            resize: both;
+            overflow: auto;
+            width: 100%;
+            height: 100px; /* Set the initial height */
+            }
+            
+            .ifpoc-table{
+            border: 1px solid black;
+            width: 100%;
+            }
+            
+            .ifpoc-table th td, .ifpoc-table tr td {
+            padding: 5px;
+            border: 1px solid black;
+            }
+            
+            .table-main-heading{
+            color:white; 
+            background-color: #2e6ca4; 
+            border: 1px solid black;
+            padding: 5px 0px 5px 5px;
+            font-size: 14px;
+            }
+            .table-global-heading{
+            color:white; 
+            background-color: #2e6ca4; 
+            border: 1px solid black;
+            padding: 5px 0px 5px 5px;
+            font-size: 16px;
+            text-align: center;
+            }
+            
+            .table-work-plan-main-heading{
+            color:white; 
+            background-color: #68A225; 
+            border: 1px solid black;
+            padding: 5px 0px 5px 5px;
+            font-size: 16px;
+            text-align: center;
+            }
+            
+            .table-sub-heading{
+            color:white; 
+            background-color: #2e6ca4; 
+            border: 1px solid black;
+            padding: 5px 0px 5px 5px;
+            font-size: 16px;
+            }
+            
+            .table-work-plan-sub-heading{
+            color:white; 
+            background-color: #68A225; 
+            border: 1px solid black;
+            padding: 5px 0px 5px 5px;
+            font-size: 16px;
+            }
+            
+            .input-label{
+            font-weight: bold;
+            }
+            
+            .slds-width-50{
+            width: 50%;
+            }
+        </style>
+    </head>
+    <div class="header" name="footer">
+        <!--apex:image url="https://.file.force.com/servlet/servlet.ImageServer?id=0153R000000SbbJ&oid=00D3R0000008iD0&lastMod=1680263912000" style="height: 100px;padding: 3px 0 3px 0;"/-->
+    </div>
+    <div class="page-content" >
+        <c:P1ProjectSummary recordId="{!recordId}" />
+        <c:P1ProjectKeywords recordId="{!recordId}" />
+        <c:P1LanguageAbstract recordId="{!recordId}" />
+        <c:P1ProjectDetails recordId="{!recordId}" />
+        <c:P1ProjectNarrativeProposal recordId="{!recordId}" />
+    </div>
+    <div class="footer" name="footer">
+      <!--  <apex:image url="{!$Resource.IfpocLogo}" width="500" height="100"/>  -->
+    </div>
+    
+</apex:page>

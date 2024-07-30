@@ -1,0 +1,24 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-26-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+	<lightning-card title="Attached Files" icon-name="standard:file">
+		<template if:true={files}>
+			<template for:each={files} for:item="file">
+				<div key={file.Id} class="slds-m-around_medium file-item"
+					style="border: 1px solid #d5c2c2; border-radius: 10px;">
+					<lightning-button variant="base" data-file-id={file.Id} label={file.Title} title={file.Title} onclick={handleFileClick}
+						class="slds-m-left_x-small"></lightning-button>
+					<!-- <span class="file-link">{file.Title}</span> -->
+				</div>
+			</template>
+		</template>
+		<template if:false={files}>
+			No files attached.
+		</template>
+	</lightning-card>
+</template>

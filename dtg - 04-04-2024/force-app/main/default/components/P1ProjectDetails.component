@@ -1,0 +1,753 @@
+<apex:component controller="IfpocFormsPdfController" access="global">
+    <apex:attribute name="recordId" type="Id" description="The record Id" />
+    <div>
+        <apex:outputPanel >
+            <apex:repeat value="{!recordFields}" var="field">
+                <div c-p1projectdetails="" class="table-container">
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-global-heading">
+                                    <span>
+                                        <h3> Project Details</h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-main-heading">
+                                    <span>
+                                        <h3>4.1 Does this project/innovation have the possibility to result in a patent, title
+                                            of ownership?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <!--Possibility_of_Patent_Ownership_title__c-->
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Possibility_of_Patent_Ownership_title__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-main-heading">
+                                    <span>
+                                        <h3>
+                                            If YES – please elaborate on who will own the patent or title, and explain how potential for conflict of interest will be
+                                            mitigated.
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <!--Patent_Ownership_Explanation__c-->
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Patent_Ownership_Explanation__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-main-heading">
+                                    <span>
+                                        <h3>4.2 Are any of the team members involved in the design or sale of a product that
+                                            will be used in testing aninnovation?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <!--Team_Member_Involvement__c-->
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Team_Member_Involvement__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-main-heading">
+                                    <span>
+                                        <h3>If YES – please elaborate on how potential for conflict of interest within the project
+                                            will be mitigated
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <!--Member_Involvement_Explanation__c-->
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Member_Involvement_Explanation__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-main-heading">
+                                    <span>
+                                        <h3>Medical, Parental or Maternity Leave
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <span>
+                                        <h5>Please inform us if the Project Lead or Co-Lead will be taking leave.
+                                        </h5>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <span>
+                                        <h5>If, during the course of your Project Term, you are provided with a leave from clinical
+                                            duties by your institution, please fill out a G4 form found at IFPOC.org and
+                                            submit it to your Governance Organization.
+                                        </h5>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-main-heading">
+                                    <span>
+                                        <h3>4.3 Is there a significant information technology component to this project?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <!--Significant_Technology_Component__c-->
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Significant_Technology_Component__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <span>
+                                        <h5>If you answered yes, please inform your CIO to obtain advice and support of your
+                                            IT needs.
+                                        </h5>
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-main-heading">
+                                    <span>
+                                        <h3>4.4 Is this Project Proposal a continuation of a previous Innovation Funded project?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Continuation_of_Previous_Project__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <span>
+                                        <h5>If YES: please provide the Year and/or Project Code, Title and Project Lead(s) for
+                                            the previous IF project.
+                                        </h5>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Year</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Title</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Project Lead(s)</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                            </tr>
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Continued_Project_Year__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Continued_Project_Titles__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Continued_Project_Lead_s__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-main-heading">
+                                    <span>
+                                        <h3>4.5 Is this project coordinated with or dependent on another AFP Innovation Fund
+                                            project?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Project_Coordination_other_AFP_project__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>If YES:</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Relationship_with_other_AFP_Inn_project__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <span>
+                                        <h5>If YES, please insert Title of Project, Project Lead, and Affiliated Institution
+                                            as well as Project Code (if known).
+                                        </h5>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Title</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Project Lead</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Affiliated Institution</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Project Code</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                            </tr>
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Coordinated_Project_Title__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Coordinated_Project_Lead_s__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Coordinated_Project_Affiliated_Inst__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Coordinated_Project_Code__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Coordinated_Project_Title__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Coordinated_Project_Lead_s__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Coordinated_Project_Affiliated_Inst__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Coordinated_Project_Code__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <span>
+                                        <h5>If the other applicants are unsuccessful, can this project stand alone?
+                                        </h5>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Ability_for_Project_to_Stand_Alone__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="" class="table-main-heading">
+                                    <span>
+                                        <h3>4.6 Will this project receive funding from any other source than the IF? – including
+                                            cash or in-kind contributions?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr c-p1projectdetails="">
+                                <td c-p1projectdetails="">
+                                    <lightning-input c-p1projectdetails="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Project_Coordination_other_AFP_project__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <span>
+                                        <h5>If answered YES, please specify by source and amount anticipated or already committed:
+                                        </h5>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectdetails="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectdetails="">
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Source</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Amount</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-formatted-rich-text c-p1projectsummary_p1projectsummary="" class="input-label slds-rich-text-editor__output">
+                                        <span>Anticipated or Committed</span>
+                                    </lightning-formatted-rich-text>
+                                </td>
+                            </tr>
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Source_1__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Amount_1__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Funding_Commitment_Status_1__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Source_2__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Amount_2__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Funding_Commitment_Status_2__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Source_3__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Amount_3__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Funding_Commitment_Status_3__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Source_4__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Amount_4__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Funding_Commitment_Status_4__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Source_5__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Other_Project_Funding_Amount_5__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                                <td c-p1projectsummary_p1projectsummary="">
+                                    <lightning-input c-p1projectsummary_p1projectsummary="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Funding_Commitment_Status_5__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </apex:repeat>
+        </apex:outputPanel>
+    </div>
+</apex:component>

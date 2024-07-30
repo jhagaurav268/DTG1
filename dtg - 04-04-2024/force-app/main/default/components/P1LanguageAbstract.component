@@ -1,0 +1,149 @@
+<apex:component controller="IfpocFormsPdfController" access="global">
+    <apex:attribute name="recordId" type="Id" description="The record Id" />
+    <div>
+        <apex:outputPanel >
+            <apex:repeat value="{!recordFields}" var="field">
+                <div c-p1projectsummary_p1projectsummary="" class="table-container">
+
+                    <table c-p1projectsummary_p1projectsummary="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectsummary_p1projectsummary="">
+                            <tr c-p1projectsummary_p1projectsummary="">
+                                <td c-p1projectsummary_p1projectsummary="" class="table-global-heading">
+                                    <span>
+                                        <h3> PLAIN LANGUAGE ABSTRACT </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1languageabstract="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1languageabstract="">
+                            <tr c-p1languageabstract="">
+                                <td c-p1languageabstract="" class="table-main-heading">
+                                    <span>
+                                        <h3>3.1 Please describe the proposed project using non-technical language emphasizing
+                                            the research question and its importance to health care delivery. If you receive
+                                            the award, this summary description will be posted on the IFPOC public website
+                                            and will be included in press releases. Ensure that your description can be understood
+                                            outside your research field.
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1languageabstract="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1languageabstract="">
+                            <!--Plain_Language_Abstract_Summary__c-->
+                            <tr c-p1languageabstract="">
+                                <td c-p1languageabstract="">
+                                    <lightning-input c-p1languageabstract="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Plain_Language_Abstract_Summary__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1languageabstract="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1languageabstract="">
+                            <tr c-p1languageabstract="">
+                                <td c-p1languageabstract="" class="table-main-heading">
+                                    <span>
+                                        <h3>3.2 What is the innovation and main question or hypothesis for this proposal?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1languageabstract="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1languageabstract="">
+                            <!-- Innovation_and_Main_Question_Hypothesis__c -->
+                            <tr c-p1languageabstract="">
+                                <td c-p1languageabstract="">
+                                    <lightning-input c-p1languageabstract="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Innovation_and_Main_Question_Hypothesis__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1languageabstract="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1languageabstract="">
+                            <tr c-p1languageabstract="">
+                                <td c-p1languageabstract="" class="table-main-heading">
+                                    <span>
+                                        <h3>3.3 Please describe how this project will influence the healthcare system or influence
+                                            patient care?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1languageabstract="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1languageabstract="">
+                            <!-- Influence_on_Healthcare_Patient_Care__c -->
+                            <tr c-p1languageabstract="">
+                                <td c-p1languageabstract="">
+                                    <lightning-input c-p1languageabstract="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Influence_on_Healthcare_Patient_Care__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1languageabstract="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1languageabstract="">
+                            <tr c-p1languageabstract="">
+                                <td c-p1languageabstract="" class="table-main-heading">
+                                    <span>
+                                        <h3>3.4 Please describe your knowledge translation plan for the results of this project
+                                            (how will you share/disseminate your results and/or spread your innovation)?
+                                        </h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1languageabstract="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1languageabstract="">
+                            <!-- Knowledge_Translation_Plan_for_Results__c -->
+                            <tr c-p1languageabstract="">
+                                <td c-p1languageabstract="">
+                                    <lightning-input c-p1languageabstract="" class="user-input slds-form-element" variant="label-hidden" readonly="" lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Knowledge_Translation_Plan_for_Results__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </apex:repeat>
+        </apex:outputPanel>
+    </div>
+</apex:component>

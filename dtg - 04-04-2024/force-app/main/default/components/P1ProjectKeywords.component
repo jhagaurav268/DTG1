@@ -1,0 +1,152 @@
+<apex:component controller="IfpocFormsPdfController" access="global">
+    <apex:attribute name="recordId" type="Id" description="The record Id" />
+    <div>
+        <apex:outputPanel >
+            <apex:repeat value="{!recordFields}" var="field">
+                <div c-p1projectkeywords="" class="table-container">
+
+                    <table c-p1projectkeywords="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectkeywords="">
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="" class="table-main-heading">
+                                    <span>
+                                        <h3>2.PROJECT KEYWORDS:</h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectkeywords="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectkeywords="">
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="" class="table-main-heading">
+                                    <span>
+                                        <h3>2.1 Please select and insert five codes and associated titles for keywords to describe
+                                            your project, in order of importance, from among the focus (code 1000), methodology
+                                            (code 2000) and outcomes (code 3000)</h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table c-p1projectkeywords="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectkeywords="">
+                            <!--Grantee_Organization_Name__c-->
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="">
+                                    <lightning-input c-p1projectkeywords="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Project_Keyword_1__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="">
+                                    <lightning-input c-p1projectkeywords="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Project_Keyword_2__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="">
+                                    <lightning-input c-p1projectkeywords="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Project_Keyword_3__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="">
+                                    <lightning-input c-p1projectkeywords="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Project_Keyword_4__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="">
+                                    <lightning-input c-p1projectkeywords="" class="user-input slds-form-element" variant="label-hidden" readonly=""
+                                        lightning-input_input-host="">
+                                        <div lightning-input_input="" part="input-text">
+                                            <label lightning-input_input="" class="slds-form-element__label slds-no-flex slds-assistive-text" for="input-1870" part="label"></label>
+                                            <div lightning-input_input="" class="slds-form-element__control slds-grow" part="input-container">
+                                                {!field.Project_Keyword_5__c}
+                                            </div>
+                                        </div>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectkeywords="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectkeywords="">
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="" class="table-main-heading">
+                                    <span>
+                                        <h3>Submit Document</h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectkeywords="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectkeywords="">
+                            <!--Grantee_Organization_Name__c-->
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="" align="center">
+                                    <apex:outputText value="{!field.Demo_Rich_Text__c}" escape="false"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectkeywords="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectkeywords="">
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="" class="table-main-heading">
+                                    <span>
+                                        <h3>Submit Second Document</h3>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table c-p1projectkeywords="" class="ifpoc-table" style="width:100%;">
+                        <tbody c-p1projectkeywords="">
+                            <!--Grantee_Organization_Name__c-->
+                            <tr c-p1projectkeywords="">
+                                <td c-p1projectkeywords="" align="center">
+                                    <apex:outputText value="{!field.Demo_Rich_Text_2__c}" escape="false"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </apex:repeat>
+        </apex:outputPanel>
+    </div>
+</apex:component>
